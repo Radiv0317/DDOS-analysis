@@ -8,7 +8,7 @@ threshold = 100
 duration = 60
 requests = Hash.new { |hash, key| hash[key] = [] }
 
-server = TCPServer.new('192.168.1.6', 80)
+server = TCPServer.new('0.0.0.0', 80) #CHANGE THIS IP 
 puts 'Server is listening on port 80...'.green
 
 server_info = { cpu_load: 0.0, memory_usage: 0.0 }
